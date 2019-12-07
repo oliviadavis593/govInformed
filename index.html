@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>GovInformed</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <header role="banner" id="header-container">
+            <h1>GovInformed</h1>
+            <p>Access information about candidates or read real-time news all to make a 
+                more informed voting decision. 
+            </p>
+        </header>
+
+        <section id="candidate-container">
+            <form class="candidate-form">
+                <h2>Access basic information about people running for office.</h2>
+
+                <label for="candidate-name">Enter the name of the candidate you're looking for</label>
+                <input type="text" class="candidate-name" placeholder="Bernie Sanders" required />
+
+                <label for="particular-year">See records pertaining to a particular year</label>
+                <input type="number" class="year-input" placeholder="i.e 2016" required/>
+
+                <label for="office-type">What office are they running in?</label>
+                <input type="text" class="office-input" placeholder="(house, senate, president)" required/>
+
+                <input type="button" class="candidate-submit button" name="candidate-submit" value="Submit"/>
+            </form>
+        </section>
+
+        <section id="financial-container">
+            <form class="financial-form">
+                <h2>Look at top financial information for all candidates running for office.</h2>
+
+                <label for="overview">See an overview for a particular office</label>
+                <input type="text" class="office-overview" placeholder="(house, senate, or president)" required/>
+
+                <label for="oddYear-selection">Choose an odd year to get back data within a 2 year cycle.</label>
+                <input type="number" class="odd-year-input" name="odd-year" placeholder="i.e 2013" required />
+
+                <input type="button" class="financial-submit button" name="financial-submit" value="Submit" />
+            </form>
+        </section>
+
+        <section id="news-container">
+            <form class="news-form">
+                <h2>Search for real-time top headline news on your favorite candidate.</h2>
+
+                <label for="search-label">Enter a name or office to see the action.</label>
+                <input type="text" class="news-input" name="news-input" placeholder="Elizabeth Warren" required/>
+
+                <input type="button" class="news-submit button" value="Submit" />
+            </form>
+        </section>
+
+        <section id="js-candidate">
+            <div class="candidate-results"></div>
+        </section>
+
+        <section id="js-financial">
+            <div class="financial-results"></div>
+        </section>
+
+        <section id="js-news">
+            <div class="news-results"></div>
+        </section>
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+    </body>
+</html>
