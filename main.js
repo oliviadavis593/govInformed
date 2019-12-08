@@ -13,10 +13,10 @@ function fetchCandidateInfo() {
 function userCandidateSearch() {
     $('.candidate-form').submit(e => {
         e.preventDefault();
-        let userInput = $('.candidate-name').val();
+        let candidateName = $('.candidate-name').val();
         let yearInput = $('.year-input').val();
         let officeInput = $('.office-input').val();
-        fetchCandidateInfo(userInput, yearInput, officeInput);
+        fetchCandidateInfo(candidateName, yearInput, officeInput);
     })
 }
 
