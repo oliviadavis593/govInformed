@@ -11,11 +11,11 @@ function formatQueryParams(params) {
 }
 
 //fetches candidate information from the FEC API (GET request)
-function fetchCandidateInfo(yearInput, candidateName, officeInput) {
+function fetchCandidateInfo(candidateName, yearInput, officeInput) {
   const params = {
       api_key: fecAPI,
-      year: yearInput, 
       q: candidateName,
+      year: yearInput, 
       office: officeInput
   };
 
@@ -55,6 +55,9 @@ function watchCandidateSubmit() {
     });
 }
 
+function displayResults(responseJson) {
+    console.log(responseJson);
+}
 
 
 
