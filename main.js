@@ -10,12 +10,12 @@ function formatQueryParams(params) {
 }
 
 //fetches candidate information from the FEC API (GET request)
-function fetchCandidateInfo() {
+function fetchCandidateInfo(yearInput, candidateName, officeInput) {
   const params = {
       api_key: fecAPI,
-      year: query, 
-      q: query,
-      office: array
+      year: yearInput, 
+      q: candidateName,
+      office: officeInput
   };
 
 
@@ -37,9 +37,9 @@ function fetchCandidateInfo() {
 function candidateForm() {
     $('.candidate-form').submit(e => {
         e.preventDefault();
-        const candidateName = $('.candidate-name').val();
-        const yearInput = $('.year-input').val();
-        const officeInput = $('.office-input').val();
+        let candidateName = $('.candidate-name').val();
+        let yearInput = $('.year-input').val();
+        let officeInput = $('.office-input').val();
         fetchCandidateInfo(candidateName, yearInput, officeInput);
     });
 }
@@ -53,3 +53,4 @@ function watchCandidateSubmit() {
 }
 
 
+candidateForm();
