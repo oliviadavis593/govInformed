@@ -1,6 +1,7 @@
 'use strict';
 
 const fecAPI = 'uXkCebDReSWI3hEUDb7vgd08sNjNktwhLylH0MD9';
+const candidateURL = 'https://api.open.fec.gov/v1/candidates/search/?';
 
 //convert object 
 function formatQueryParams(params) {
@@ -18,8 +19,10 @@ function fetchCandidateInfo(yearInput, candidateName, officeInput) {
       office: officeInput
   };
 
+    const queryString = formatQueryParams(params);
+    const url = candidateURL + '?' + queryString;
 
-  fetch('https://api.open.fec.gov/v1/candidates/search')
+  fetch(url)
     .then(response => {
         if(response.ok) {
             return response.json()
