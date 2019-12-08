@@ -1,29 +1,55 @@
 'use strict';
 
-const apiKey = 'uXkCebDReSWI3hEUDb7vgd08sNjNktwhLylH0MD9';
+const fecAPI = 'uXkCebDReSWI3hEUDb7vgd08sNjNktwhLylH0MD9';
 
-//Fetches information for the first endpoint (FEC API)
-function fetchCandidateInfo() {
-    fetch('https://api.open.fec.gov/v1/candidates/')
-        .then(response => response.json())
-        .then(responseJson => console.log(responseJson))
+//convert object 
+function formatQueryParams(params) {
+    const queryItems = Object.keys(params)
+    .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(params[key])}`);
+    return queryItems.join('&');
 }
 
-//Form submission for candidate form 
-function userCandidateSearch() {
+//fetches candidate information from the FEC API (GET request)
+function fetchCandidateInfo() {
+  const params = {
+      api_key: fecAPI,
+      year: query, 
+      q: query,
+      office: array
+  };
+
+
+  fetch('https://api.open.fec.gov/v1/candidates/search')
+    .then(response => {
+        if(response.ok) {
+            return response.json()
+        }
+        throw new Error(response.statusText)
+    })
+    .then(responseJson => console.log(responseJson))
+    .catch(error => {
+        $('#js-error-message').text(`Something went wrong: ${error.message}`);
+    });
+}
+
+
+//form submission for the candidate form 
+function candidateForm() {
     $('.candidate-form').submit(e => {
         e.preventDefault();
-        let candidateName = $('.candidate-name').val();
-        let yearInput = $('.year-input').val();
-        let officeInput = $('.office-input').val();
+        const candidateName = $('.candidate-name').val();
+        const yearInput = $('.year-input').val();
+        const officeInput = $('.office-input').val();
         fetchCandidateInfo(candidateName, yearInput, officeInput);
-    })
+    });
 }
 
-//Submit button for candidate form 
+//submit button for the candidate form 
 function watchCandidateSubmit() {
     $('.candidate-submit').submit(e => {
         e.preventDefault();
         fetchCandidateInfo();
     });
 }
+
+
