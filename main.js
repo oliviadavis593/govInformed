@@ -1,7 +1,7 @@
 'use strict';
 
 const fecAPI = 'uXkCebDReSWI3hEUDb7vgd08sNjNktwhLylH0MD9';
-const candidateURL = 'https://api.open.fec.gov/v1/candidates/search/?';
+const candidateURL = 'https://api.open.fec.gov/v1/candidates/';
 
 //convert object 
 function formatQueryParams(params) {
@@ -54,6 +54,8 @@ function watchCandidateSubmit() {
         fetchCandidateInfo();
     });
 }
+
+
 
 
 candidateForm();
