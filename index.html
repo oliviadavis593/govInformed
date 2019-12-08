@@ -26,7 +26,7 @@
                 <label for="office-type">What office are they running in?</label>
                 <input type="text" class="office-input" placeholder="(house, senate, president)" required/>
 
-                <input type="button" class="candidate-submit button" name="candidate-submit" value="Submit"/>
+                <input type="submit" class="candidate-submit button" name="candidate-submit" value="Submit"/>
             </form>
         </section>
 
@@ -40,7 +40,7 @@
                 <label for="oddYear-selection">Choose an odd year to get back data within a 2 year cycle.</label>
                 <input type="number" class="odd-year-input" name="odd-year" placeholder="i.e 2013" required />
 
-                <input type="button" class="financial-submit button" name="financial-submit" value="Submit" />
+                <input type="submit" class="financial-submit button" name="financial-submit" value="Submit" />
             </form>
         </section>
 
@@ -51,9 +51,11 @@
                 <label for="search-label">Enter a name or office to see the action.</label>
                 <input type="text" class="news-input" name="news-input" placeholder="Elizabeth Warren" required/>
 
-                <input type="button" class="news-submit button" value="Submit" />
+                <input type="submit" class="news-submit button" value="Submit" />
             </form>
         </section>
+
+        <div id="js-error-message" class="error-message"></div>
 
         <section id="js-candidate">
             <div class="candidate-results"></div>
