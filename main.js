@@ -177,16 +177,17 @@ function newsResults(responseJson) {
 }
 
 //load results onto a new page 
-/*function newsSubmit() {
-    $('#js-news').on('submit', function(e) {
+function newsSubmit() {
+    $('.news-from').on('submit', function(e) {
         e.preventDefault();
         $('#header-container').hide();
-        $('#candidate-contianer').hide();
-        $('#js-news').show();
+        $('#candidate-container').hide();
+        $('#news-container').hide();
+        $('.news-results').show();
     })
-}*/
+}
 
 candidateForm();
 newsForm();
-
+newsSubmit();
 
