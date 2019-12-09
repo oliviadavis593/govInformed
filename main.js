@@ -129,7 +129,7 @@ function fetchNewsInfo(newsInput) {
         }
         throw new Error(response.statusText)
     })
-    .then(responseJson => console.log(responseJson))
+    .then(responseJson => newsResults(responseJson))
     .catch(error => {
         $('#js-error-message').text(`Something went wrong: ${error.message}`);
     });
@@ -152,9 +152,41 @@ function watchNewsSubmit() {
     })
 }
 
-function newsresults() {
-    
+function newsResults(responseJson) {
+    console.log(responseJson);
+    $('.news-results').empty();
+
+    let html = '';
+    for(let i = 0; i < responseJson.articles.length; i += 1) {
+        const articles = responseJson.articles[i];
+        const author = articles.author;
+        const title = articles.title;
+        const description = articles.description;
+        const url = articles.url;
+
+        html += `
+        <h3>${title}</h3>
+        <h4>${author}</h4>
+        <p>${description}</p>
+        <a href="${url}" target="_blank">${url}</a>
+        `;
+    }
+    //display results section
+    $('.news-results').html(html);
+    $('#js-news').removeClass('hidden');
 }
+
+//load results onto a new page 
+/*function newsSubmit() {
+    $('#js-news').on('submit', function(e) {
+        e.preventDefault();
+        $('#header-container').hide();
+        $('#candidate-contianer').hide();
+        $('#js-news').show();
+    })
+}*/
 
 candidateForm();
 newsForm();
+
+
