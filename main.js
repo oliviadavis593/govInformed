@@ -37,7 +37,7 @@ function fetchCandidateInfo(candidateName, yearInput, officeInput) {
         }
         throw new Error(response.statusText)
     })
-    .then(responseJson => console.log(responseJson))
+    .then(responseJson => candidateResults(responseJson))
     .catch(error => {
         $('#js-error-message').text(`Something went wrong: ${error.message}`);
     });
@@ -70,8 +70,31 @@ function candidateResults(responseJson) {
     //iterate through items array 
     let html = '';
     for(let i = 0; i < responseJson.results.length; i += 1) {
+        const results = responseJson.results[i];
+        const name = results.preventDefaultname;
+        const office = results.office_type;
+        const party = results.party_full; 
+        const state = results.state; 
+        const electionYears = results.election_years;
+        const cycles = results.cycles; 
+        const candidateStatus = results.candidate_status;
+        const raisedFunds = results.has_raised_funds; 
 
-        
+        html += `
+        <h1>${name}</h1>
+        <ul>
+            <li>${office}</li>
+            <li>${party}</li>
+            <li>${state}</li>
+            <li>${electionYears}</li>
+            <li>${cycles}</li>
+            <li>${candidateStatus}</li>
+            <li>${raisedFunds}</li>
+        `;
+
+        //display the results section 
+        $('.candidate-results').html(html);
+        $('#js-candidate').removeClass('hidden');
     }
 
 
@@ -127,6 +150,10 @@ function watchNewsSubmit() {
         e.preventDefault();
         fetchNewsInfo();
     })
+}
+
+function newsresults() {
+    
 }
 
 candidateForm();
