@@ -5,16 +5,18 @@ const candidateURL = 'https://api.open.fec.gov/v1/candidates/';
 const newsAPI = 'b9e9c385246849c0b943c3902f635af9';
 const newsURL = 'https://newsapi.org/v2/top-headlines';
 
-//convert object 
+
+/*=====================================*/
+/* Candidate Form Functions ======= */
+/*=====================================*/
+
+//convert candidate objects
 function formatQueryParams(params) {
     const queryItems = Object.keys(params)
     .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(params[key])}`);
     return queryItems.join('&');
 }
 
-/*=====================================*/
-/* Candidate Form Functions ======= */
-/*=====================================*/
 
 //fetches candidate information from the FEC API (GET request)
 function fetchCandidateInfo(candidateName, yearInput, officeInput) {
@@ -22,7 +24,7 @@ function fetchCandidateInfo(candidateName, yearInput, officeInput) {
       api_key: fecAPI,
       q: candidateName,
       year: yearInput, 
-      office: officeInput
+      office_full: officeInput
   };
 
     const queryString = formatQueryParams(params);
