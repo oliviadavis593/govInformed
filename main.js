@@ -70,31 +70,51 @@ function candidateResults(responseJson) {
     //iterate through items array 
     let html = '';
     for(let i = 0; i < responseJson.results.length; i += 1) {
-        const results = responseJson.results[i];
-        const name = results.preventDefaultname;
-        const office = results.office_type;
-        const party = results.party_full; 
-        const state = results.state; 
+        const activeDate = results.active_through;
+        const inactiveCandidate = results.candidate_inactive;
         const electionYears = results.election_years;
-        const cycles = results.cycles; 
-        const candidateStatus = results.candidate_status;
-        const raisedFunds = results.has_raised_funds; 
+        const name = results.name; 
+        const officeFull = results.office_full;
+        const partyFull = results.party_full; 
+        const state = results.state; 
+
 
         html += `
-        <h1>${name}</h1>
         <ul>
-            <li>${office}</li>
-            <li>${party}</li>
-            <li>${state}</li>
+        <h2>${name}</h2>
+            <li>${activeDate}</li>
+            <li>${inactiveCandidate}</li>
             <li>${electionYears}</li>
-            <li>${cycles}</li>
-            <li>${candidateStatus}</li>
-            <li>${raisedFunds}</li>
-        `;
+            <li>${officeFull}</li>
+            <li>${partyFull}</li>
+            <li>${state}</li>
+        </ul>
 
+        <ul>
+        <h2>${name}</h2>
+            <li>${activeDate}</li>
+            <li>${inactiveCandidate}</li>
+            <li>${electionYears}</li>
+            <li>${officeFull}</li>
+            <li>${partyFull}</li>
+            <li>${state}</li>
+        </ul>
+
+        <ul>
+        <h2>${name}</h2>
+            <li>${activeDate}</li>
+            <li>${inactiveCandidate}</li>
+            <li>${electionYears}</li>
+            <li>${officeFull}</li>
+            <li>${partyFull}</li>
+            <li>${state}</li>
+        </ul>
+        `
         //display the results section 
         $('.candidate-results').html(html);
         $('#js-candidate').removeClass('hidden');
+
+
     }
 
 
@@ -141,7 +161,12 @@ function newsForm() {
         e.preventDefault();
         let newsInput = $('.news-input').val();
         fetchNewsInfo(newsInput);
-    })
+
+        $('#header-container').remove();
+        $('#candidate-container').remove();
+        $('#news-container').remove();
+        $('.news-results').show();
+    });
 }
 
 //submit button for news form 
@@ -149,7 +174,7 @@ function watchNewsSubmit() {
     $('.news-submit').submit(e => {
         e.preventDefault();
         fetchNewsInfo();
-    })
+    });
 }
 
 function newsResults(responseJson) {
@@ -176,18 +201,8 @@ function newsResults(responseJson) {
     $('#js-news').removeClass('hidden');
 }
 
-//load results onto a new page 
-function newsSubmit() {
-    $('.news-from').on('submit', function(e) {
-        e.preventDefault();
-        $('#header-container').hide();
-        $('#candidate-container').hide();
-        $('#news-container').hide();
-        $('.news-results').show();
-    })
-}
-
 candidateForm();
 newsForm();
-newsSubmit();
+
+
 
