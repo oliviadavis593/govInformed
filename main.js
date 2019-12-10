@@ -70,10 +70,10 @@ function candidateResults(responseJson) {
     //iterate through items array 
     let html = '';
     for(let i = 0; i < responseJson.results.length; i += 1) {
+        const results = responseJson.results[i];
         const activeDate = results.active_through;
         const inactiveCandidate = results.candidate_inactive;
         const electionYears = results.election_years;
-        const name = results.name; 
         const officeFull = results.office_full;
         const partyFull = results.party_full; 
         const state = results.state; 
@@ -81,35 +81,14 @@ function candidateResults(responseJson) {
 
         html += `
         <ul>
-        <h2>${name}</h2>
-            <li>${activeDate}</li>
-            <li>${inactiveCandidate}</li>
-            <li>${electionYears}</li>
-            <li>${officeFull}</li>
-            <li>${partyFull}</li>
-            <li>${state}</li>
+        <h2>${partyFull}</h2>
+            <li>Active Date: ${activeDate}</li>
+            <li>Are they inactive: ${inactiveCandidate}</li>
+            <li>Election Years: ${electionYears}</li>
+            <li>Office they were or are running for: ${officeFull}</li>
+            <li>State: ${state}</li>
         </ul>
-
-        <ul>
-        <h2>${name}</h2>
-            <li>${activeDate}</li>
-            <li>${inactiveCandidate}</li>
-            <li>${electionYears}</li>
-            <li>${officeFull}</li>
-            <li>${partyFull}</li>
-            <li>${state}</li>
-        </ul>
-
-        <ul>
-        <h2>${name}</h2>
-            <li>${activeDate}</li>
-            <li>${inactiveCandidate}</li>
-            <li>${electionYears}</li>
-            <li>${officeFull}</li>
-            <li>${partyFull}</li>
-            <li>${state}</li>
-        </ul>
-        `
+        `;
         //display the results section 
         $('.candidate-results').html(html);
         $('#js-candidate').removeClass('hidden');
