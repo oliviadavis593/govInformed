@@ -71,7 +71,6 @@ body {
 
 .candidate-submit {
     margin-top: 30px;
-    
     border: 1px solid #000; 
     margin-left: 50px;
     display: flex;
@@ -83,13 +82,30 @@ body {
 
 .news-form {
     border: 4px solid #000;
-    width: 250px;
+    width:300px;
     height: 355px;
     margin-top: 30px; 
     text-align: center;
 }
 
+.news-form h2 {
+    font-size: 20px; 
+  
+}
+
+.news-form label {
+    display: flex;
+    flex-direction: column;
+}
+
+.news-form input {
+    display: block; 
+    margin: 30px auto; 
+}
+
 .news-submit {
     display: flex; 
     flex-direction: column;
+    border: 1px solid #000; 
+    margin-top: 40px; 
 }
