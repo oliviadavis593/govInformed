@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0; 
+    width: 100%;
+    font-family: 'Inconsolata', monospace;
+    background-color: #4264c0;
+}
+
+
+
+/*===========================*/
+    /*Header Section=========*/
+/*===========================*/
+#header-container {
+    height: 55vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)),url(images/whitehouse.jpg);
+    background-size: cover;
+    margin: 0 auto;
+    color: #fff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#header-container h1 {
+    font-weight: bold;
+    font-size: 80px; 
+    font-family: 'Oswald', sans-serif;
+}
+
+#header-container p {
+    font-size: 20px; 
+}
