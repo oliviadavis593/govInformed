@@ -52,6 +52,11 @@ function candidateForm() {
         let yearInput = $('.year-input').val();
         let officeInput = $('.office-input').val();
         fetchCandidateInfo(candidateName, yearInput, officeInput);
+
+        $('#header-container').remove();
+        $('#news-container').remove();
+        $('#candidate-container').remove();
+        $('.candidate-results').show();
     });
 }
 
@@ -86,7 +91,7 @@ function candidateResults(responseJson) {
             <li>Are they inactive: ${inactiveCandidate}</li>
             <li>Election Years: ${electionYears}</li>
             <li>Office they were or are running for: ${officeFull}</li>
-            <li>State: ${state}</li>
+            <li>State they were or are running in: ${state}</li>
         </ul>
         `;
         //display the results section 
