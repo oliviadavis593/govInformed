@@ -53,7 +53,8 @@ function candidateForm() {
         let officeInput = $('.office-input').val();
         fetchCandidateInfo(candidateName, yearInput, officeInput);
 
-        $('#header-container').remove();
+        $('#header-container p').remove();
+        $('#header-container h1').text('Basic information results');
         $('#news-container').remove();
         $('#candidate-container').remove();
         $('.candidate-results').show();
@@ -146,7 +147,8 @@ function newsForm() {
         let newsInput = $('.news-input').val();
         fetchNewsInfo(newsInput);
 
-        $('#header-container').remove();
+        $('#header-container p').remove();
+        $('#header-container h1').text('You real-time news results!');
         $('#candidate-container').remove();
         $('#news-container').remove();
         $('.news-results').show();
