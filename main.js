@@ -58,6 +58,7 @@ function candidateForm() {
         $('#news-container').remove();
         $('#candidate-container').remove();
         $('.candidate-results').show();
+        
     });
 }
 
