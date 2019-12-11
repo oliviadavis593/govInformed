@@ -24,6 +24,14 @@ body {
     padding-top: 5px;    
 }
 
+main {
+    display: flex; 
+    align-content: center; 
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px; 
+}
+
 /*===========================*/
     /*Header Section=========*/
 /*===========================*/
@@ -56,9 +64,6 @@ body {
     /*Candidate Section=========*/
 /*==================================*/
 
-#candidate-container {
-    padding: 10px; 
-}
 
 .candidate-form {
     border: 4px solid #000;
@@ -108,9 +113,7 @@ body {
     /*News Section=========*/
 /*==================================*/
 
-#news-container {
-    padding: 10px; 
-}
+
 
 .news-form {
     border: 4px solid #000;
