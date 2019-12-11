@@ -84,16 +84,18 @@ function candidateResults(responseJson) {
         const officeFull = results.office_full;
         const partyFull = results.party_full; 
         const state = results.state; 
+        const fileDate = results.first_file_date;
 
 
         html += `
         <ul>
         <h2>${partyFull}</h2>
             <li>Active Date: ${activeDate}</li>
+            <li>Date they applied to run: ${fileDate}</li>
             <li>Are they inactive: ${inactiveCandidate}</li>
             <li>Election Years: ${electionYears}</li>
             <li>Office they were or are running for: ${officeFull}</li>
-            <li>State they were or are running in: ${state}</li>
+            <li>State they were or are running for: ${state}</li>
         </ul>
         `;
         //display the results section 
