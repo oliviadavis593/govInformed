@@ -30,6 +30,7 @@ main {
     flex-direction: column;
     align-items: center;
     margin-top: 30px; 
+    height: 120vh; 
 }
 
 /*===========================*/
@@ -161,13 +162,27 @@ main {
     font-size: 15px; 
 }
 
-.candidate-results h1 {
-    font-size: 80px; 
-}
-
 #js-candidate {
     background-color: #7f1206;
     width: 300px; 
     height: auto; 
+    /*border: 3px solid #000; This for some reason shows up at the bottom of the news form (homepage)
+                                and creates a weird border around the actual news results*/
+    border-radius: 2%; 
+    box-shadow: 4px 4px 4px #000;
+    overflow: scroll;  
+}
+
+
+/*=======================================*/
+    /*JS-News-Container=========*/
+/*=======================================*/
+
+#js-news {
+    background-color: #7f1206;
     border: 3px solid #000; 
+    box-shadow: 4px 4px 4px #000; 
+    width: 300px; 
+    height: auto; 
+    overflow: scroll; 
 }
