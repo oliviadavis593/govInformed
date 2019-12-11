@@ -153,7 +153,7 @@ function newsForm() {
         fetchNewsInfo(newsInput);
 
         $('#header-container p').remove();
-        $('#header-container h1').text('You real-time news results!');
+        $('#header-container h1').text('News Results');
         $('#candidate-container').remove();
         $('#news-container').remove();
         $('.news-results').show();
