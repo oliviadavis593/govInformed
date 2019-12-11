@@ -54,7 +54,7 @@ function candidateForm() {
         fetchCandidateInfo(candidateName, yearInput, officeInput);
 
         $('#header-container p').remove();
-        $('#header-container h1').text('Basic information results');
+        $('#header-container h1').text('Candidate Results');
         $('#news-container').remove();
         $('#candidate-container').remove();
         $('.candidate-results').show();
@@ -93,7 +93,9 @@ function candidateResults(responseJson) {
             <li>Active Date: ${activeDate}</li>
             <li>Date they applied to run: ${fileDate}</li>
             <li>Are they inactive: ${inactiveCandidate}</li>
-            <li>Election Years: ${electionYears}</li>
+            <li>Election Years: 
+            ${electionYears}
+            </li>
             <li>Office they were or are running for: ${officeFull}</li>
             <li>State they were or are running for: ${state}</li>
         </ul>
