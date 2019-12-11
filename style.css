@@ -152,3 +152,18 @@ main {
     border: 1px solid #000; 
     margin-top: 40px; 
 }
+
+/*=======================================*/
+    /*JS-Candidate-Container=========*/
+/*=======================================*/
+
+#js-candidate h1 {
+    font-size: 80px; 
+}
+
+#js-candidate {
+    background-color: #7f1206;
+    width: 300px; 
+    height: auto; 
+    border: 3px solid #000; 
+}
