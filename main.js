@@ -192,6 +192,7 @@ function newsResults(responseJson) {
     $('#js-news').removeClass('hidden');
 }
 
+
 candidateForm();
 newsForm();
 
