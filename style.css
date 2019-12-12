@@ -74,7 +74,9 @@ input[type="submit"]:hover {
 #header-container p {
     font-size: 20px; 
     text-align: center;
-    padding: 40px;  
+    padding: 40px; 
+    word-spacing: 5px; 
+    line-height: 1.6; 
 }
 
 /*=================================*/
