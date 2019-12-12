@@ -193,7 +193,8 @@ main {
 
 #js-news {
     background-color: #7f1206;
-    border: 3px solid #000; 
+    border: 3px solid #000;
+    border-radius: 1%;  
     box-shadow: 4px 4px 4px #000; 
     width: 300px; 
     height: auto; 
@@ -345,7 +346,7 @@ main {
     }
 
     .news-results {
-        font-size: 30px; 
+        font-size: 20px; 
     }
 }
 
@@ -380,6 +381,6 @@ main {
     }
 
     .news-results {
-        font-size: 35px; 
+        font-size: 20px;
     }
 }
