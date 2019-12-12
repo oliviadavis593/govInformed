@@ -216,6 +216,11 @@ main {
         margin-left: 40px; 
     }
 
+    /*Header Section*/
+    #header-container {
+        height: 60vh;
+    }
+
     /*Input Section*/
 
     input[type="text"],
