@@ -281,6 +281,16 @@ main {
     .candidate-results {
         font-size: 15px; 
     }
+
+    /*News Results Section*/
+
+    #js-news {
+        width: 650px; 
+    }
+
+    .news-results {
+        font-size: 20px; 
+    }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -313,6 +323,7 @@ main {
         font-size: 20px; 
     }
 
+    /*Candidate Results Section*/
     #js-candidate {
         margin-top: 80px;
         width: 600px; 
@@ -321,6 +332,15 @@ main {
     
     .candidate-results {
         font-size: 20px; 
+    }
+
+    /*News Results Section*/
+    #js-news {
+        width: 750px; 
+    }
+
+    .news-results {
+        font-size: 30px; 
     }
 }
 
@@ -337,6 +357,8 @@ main {
 
 
 @media only screen and (min-width: 1400px) {
+
+    /*Candidate Results Section*/
     #js-candidate {
         width: 900px; 
         height: 900px; 
@@ -344,5 +366,15 @@ main {
 
     .candidate-results {
         font-size: 27px; 
+    }
+
+    /*News Results Section*/
+
+    #js-news {
+        width: 950px; 
+    }
+
+    .news-results {
+        font-size: 35px; 
     }
 }
