@@ -215,6 +215,13 @@ main {
         font-size: 23px; 
         margin-left: 40px; 
     }
+
+    /*Input Section*/
+
+    input[type="text"],
+    input[type="number"] {
+        font-size: 15px; 
+    }
     /*Header Section*/
     #header-container h1 {
         font-size: 55px;
@@ -289,5 +296,10 @@ main {
     .news-input {
         width:250px; 
         height: 50px; 
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        font-size: 20px; 
     }
 }
