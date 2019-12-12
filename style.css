@@ -182,7 +182,7 @@ main {
     /*border: 3px solid #000; This for some reason shows up at the bottom of the news form (homepage)
                                 and creates a weird border around the actual news results*/
     border-radius: 2%; 
-    box-shadow: 4px 4px 4px #000;
+    box-shadow: 5px 5px 5px #000;
     overflow: scroll;  
 }
 
@@ -271,6 +271,16 @@ main {
         width: 200px; 
         height: 40px; 
     }
+
+    /*Candidate Results Section*/
+    #js-candidate {
+        width: 550px;
+        height: 700px;  
+    }
+
+    .candidate-results {
+        font-size: 15px; 
+    }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -301,5 +311,38 @@ main {
     input[type="text"],
     input[type="number"] {
         font-size: 20px; 
+    }
+
+    #js-candidate {
+        margin-top: 80px;
+        width: 600px; 
+         
+    }
+    
+    .candidate-results {
+        font-size: 20px; 
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    #js-candidate {
+        width: 750px; 
+        
+    }
+
+    .candidate-results {
+        font-size: 25px; 
+    }
+} 
+
+
+@media only screen and (min-width: 1400px) {
+    #js-candidate {
+        width: 900px; 
+        height: 900px; 
+    }
+
+    .candidate-results {
+        font-size: 27px; 
     }
 }
