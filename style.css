@@ -69,8 +69,9 @@ main {
 }
 
 #header-container p {
-    font-size: 15px; 
+    font-size: 20px; 
     text-align: center;
+    padding: 40px;  
 }
 
 /*=================================*/
@@ -216,11 +217,13 @@ main {
     }
     /*Header Section*/
     #header-container h1 {
-        font-size: 50px;
+        font-size: 55px;
+        padding-top: 75px; 
     }
 
     #header-container p {
-        font-size: 20px; 
+        font-size: 25px;
+        padding: 70px;  
     }
     
    /*Candidate Section*/
@@ -260,5 +263,31 @@ main {
     .news-input {
         width: 200px; 
         height: 40px; 
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    #header-container h1 {
+        font-size: 65px; 
+    }
+
+    #header-container p {
+        padding: 90px; 
+    }
+
+    .candidate-form {
+        height: 600px; 
+    }
+    .candidate-name,
+    .year-input,
+    .office-input {
+        width: 250px; 
+        height: 50px; 
+    }
+
+    .news-input {
+        width:250px; 
+        height: 50px; 
     }
 }
