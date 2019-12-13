@@ -23,5 +23,5 @@
 - jQuery
 - Government API (FEC)
 - NewsAPI (NewsAPI)
-- Utilize responsive design for Mobile, Desktop, and Tablet. 
+- Utilized responsive design for Mobile, Desktop, and Tablet devices. 
 
