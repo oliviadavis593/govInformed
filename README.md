@@ -1,7 +1,7 @@
 # GovInformed :us:
 
 - Access information about your favorite candidates election history and read headline news to stay politically enlightened.
-  You can access the website [here](https://oliviadavis593.github.io/govInformed/)
+  You can access the website [here](https://oliviadavis593.github.io/govInformed/).
 
 # Project ScreenShots :camera:
 
