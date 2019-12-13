@@ -10,6 +10,11 @@
 ![candidate-results|300x350,10%](https://user-images.githubusercontent.com/24490819/70744298-0d09f180-1ce7-11ea-89b6-c003b501f1a2.png)
 ![news-results|300x350,10%](https://user-images.githubusercontent.com/24490819/70744388-3460be80-1ce7-11ea-9241-8c7b48862e0e.png)
 
+# Project Summary :page_with_curl:
+
+- I designed this app with the intention of enabling people to further explore the history of a particular candidate.
+- The user should be able to enter in one of the two forms at a times, and enter expected criteria - in order to retrieve either a candidates history or look up recent headline news for that said candidate. 
+
 # Technology Used :books:
 
 - HTML5 
