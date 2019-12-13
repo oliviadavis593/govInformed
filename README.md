@@ -14,6 +14,7 @@
 
 - HTML5 
 - CSS3
+- Javascript
 - jQuery
 - Government API (FEC)
 - NewsAPI (NewsAPI)
