@@ -103,7 +103,7 @@ function candidateResults(responseJson) {
         $('#js-candidate').removeClass('hidden');
     }
 
-    $('.candidate-results').append( <button class="homepage-button button"><a href="/">Go back to the homepage</a></button>);
+    $('.candidate-results').append(`<button class="homepage-button button"><a href="/">Go back to the homepage</a></button>`);
 
 }
 
