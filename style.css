@@ -307,6 +307,10 @@ main {
         height: 40px; 
     }
 
+    .candidate-submit button {
+        font-size: 15px; 
+    }
+
     /*News Section*/
     .news-form {
         width: 500px; 
@@ -323,6 +327,10 @@ main {
     .news-input {
         width: 200px; 
         height: 40px; 
+    }
+
+    .news-submit button {
+        font-size: 15px; 
     }
 
     /*Candidate Results Section*/
