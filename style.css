@@ -28,11 +28,9 @@ main {
     /*Button Section=========*/
 /*===========================*/
 
-.homepage a {
+.homepage-button a {
     width: 150px;
     height: 55px;    
-    box-shadow: 3px 3px 3px #000;
-    background-color: #1e2f5c;
     color: #fff;
     font-weight: bold;
     font-size: 13px;
