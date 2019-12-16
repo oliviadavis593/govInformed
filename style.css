@@ -27,6 +27,19 @@ main {
 /*===========================*/
     /*Button Section=========*/
 /*===========================*/
+
+.homepage a {
+    width: 150px;
+    height: 55px;    
+    box-shadow: 3px 3px 3px #000;
+    background-color: #1e2f5c;
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+}
+
 .button {
     width: 100px;
     height: 30px;    
@@ -185,12 +198,14 @@ input[type="submit"]:hover {
 
 #js-candidate {
     background-color: #7f1206;
-    width: 300px; 
-    height: auto; 
     box-shadow: 5px 5px 5px #000;
-    overflow: scroll;
+    
 }
 
+.candidate-results {
+    width: 300px; 
+    height: auto; 
+}
 
 /*=======================================*/
     /*JS-News-Container=========*/
@@ -289,8 +304,8 @@ input[type="submit"]:hover {
 
     /*Candidate Results Section*/
     #js-candidate {
-        width: 550px;
-        height: 700px;  
+        width: 400px; 
+        height: auto; 
     }
 
     .candidate-results {
