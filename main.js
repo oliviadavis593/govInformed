@@ -84,9 +84,7 @@ function candidateResults(responseJson) {
         const state = results.state; 
         const fileDate = results.first_file_date;
 
-
         $('.candidate-results').html(html);
-        $('.candidate-results').append( <button class="homepage-button button"><a href="/">Go back to the homepage</a></button>);
 
         html += `
         <h2>${partyFull}</h2>
@@ -103,10 +101,9 @@ function candidateResults(responseJson) {
         //display the results section 
         $('.candidate-results').html(html);
         $('#js-candidate').removeClass('hidden');
-
-
     }
 
+    $('.candidate-results').append( <button class="homepage-button button"><a href="/">Go back to the homepage</a></button>);
 
 }
 
