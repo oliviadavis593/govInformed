@@ -51,6 +51,10 @@ main {
 .candidate-submit {
     width: 100px; 
     margin: 0 auto; 
+    margin-top: 30px;
+    border: 1px solid #000; 
+    display: flex;
+    flex-direction: column;
 }
 
 .candidate-submit button {
@@ -63,6 +67,10 @@ main {
 .news-submit {
     width: 100px; 
     margin: 0 auto; 
+    display: flex; 
+    flex-direction: column;
+    border: 1px solid #000; 
+    margin-top: 40px; 
 }
 
 .news-submit button {
@@ -163,14 +171,7 @@ main {
    margin: 30px auto;  
 }
 
-.candidate-submit {
-    margin-top: 30px;
-    border: 1px solid #000; 
-    margin-left: 50px;
-    display: flex;
-    flex-direction: column;
-     
-}
+
 
 ::placeholder {
     color: #c9d0d2;
@@ -213,12 +214,7 @@ main {
     margin: 30px auto; 
 }
 
-.news-submit {
-    display: flex; 
-    flex-direction: column;
-    border: 1px solid #000; 
-    margin-top: 40px; 
-}
+
 
 /*=======================================*/
     /*JS-Candidate-Container=========*/
