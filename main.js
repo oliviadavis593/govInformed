@@ -96,7 +96,7 @@ function candidateResults(responseJson) {
             <li>State they were or are running for: ${state}</li>
         </ul>
         </div>
-        <button class="homepage-button button"><a href="#">Go back to the homepage</a></button>
+        <button class="homepage-button button"><a href="govInformed">Go back to the homepage</a></button>
         `;
         //display the results section 
         $('.candidate-results').html(html);
