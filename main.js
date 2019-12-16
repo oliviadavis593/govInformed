@@ -182,7 +182,7 @@ function newsResults(responseJson) {
         <h3>${title}</h3>
         <h4>${author}</h4>
         <p>${description}</p>
-        <a href="${url}" target="_blank">${url}</a>
+        <a href="${url}" target="_blank">Click here to view the full article</a>
         `;
     }
     //display results section
