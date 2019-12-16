@@ -28,18 +28,18 @@ main {
     /*Button Section=========*/
 /*===========================*/
 .button {
-    width: 100px; 
-    height: 30px; 
+    width: 100px;
+    height: 30px;    
     border-radius: 20px; 
     box-shadow: 4px 4px 4px #000;
     background-color: #1e2f5c;
     color: #fff;
     font-weight: bold;
-    margin-left: 50px;
     font-size: 13px;
-    padding-left: 25px;
-    padding-top: 5px;    
+    text-align: center;
+     
 }
+
 
 
 input[type="submit"]:hover {
@@ -127,6 +127,10 @@ input[type="submit"]:hover {
      
 }
 
+::placeholder {
+    color: #c9d0d2;
+}
+
 /*=================================*/
     /*News Section=========*/
 /*==================================*/
@@ -187,7 +191,7 @@ input[type="submit"]:hover {
                                 and creates a weird border around the actual news results*/
     border-radius: 2%; 
     box-shadow: 5px 5px 5px #000;
-    overflow: scroll;  
+    overflow: scroll;
 }
 
 
@@ -200,9 +204,9 @@ input[type="submit"]:hover {
     border: 3px solid #000;
     border-radius: 1%;  
     box-shadow: 4px 4px 4px #000; 
-    width: 300px; 
+    width: 350px; 
     height: auto; 
-    overflow: scroll; 
+    overflow: scroll;
 }
 
 
