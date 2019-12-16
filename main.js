@@ -192,13 +192,7 @@ function newsResults(responseJson) {
     $('#js-news').removeClass('hidden');
 }
 
-//jQuery fade effects
-$(function() {
-    $('#header-container h1').hide().fadeIn(2000);
-    $('#header-container p').hide().fadeIn(2000);
-    $('.candidate-form').hide().fadeIn(2000);
-    $('.news-form').hide().fadeIn(2000);
-});
+
 
 candidateForm();
 newsForm();
