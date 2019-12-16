@@ -72,7 +72,6 @@ function watchCandidateSubmit() {
 
 //Display candidate results to the dom 
 function candidateResults(responseJson) {
-    console.log(responseJson);
    $('.candidate-results').empty();
     //iterate through items array 
     let html = '';
@@ -169,7 +168,6 @@ function watchNewsSubmit() {
 }
 
 function newsResults(responseJson) {
-    console.log(responseJson);
     $('.news-results').empty();
 
     let html = '';
