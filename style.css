@@ -187,9 +187,6 @@ input[type="submit"]:hover {
     background-color: #7f1206;
     width: 300px; 
     height: auto; 
-    /*border: 3px solid #000; This for some reason shows up at the bottom of the news form (homepage)
-                                and creates a weird border around the actual news results*/
-    border-radius: 2%; 
     box-shadow: 5px 5px 5px #000;
     overflow: scroll;
 }
@@ -207,6 +204,10 @@ input[type="submit"]:hover {
     width: 350px; 
     height: auto; 
     overflow: scroll;
+}
+
+.news-results a {
+    color: #f4b405;
 }
 
 
