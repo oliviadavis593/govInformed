@@ -41,6 +41,31 @@ main {
 }
 
 .button {
+    background-color: #1e2f5c;
+    box-shadow: 4px 4px 4px #000;
+    color: #fff; 
+    display: block; 
+    width: 100px; 
+    text-align: center; 
+    border-radius: 20px; 
+    padding: 10px;  
+    
+}
+
+.candidate-submit button {
+    color: #fff; 
+    font-weight: bold; 
+   
+}
+
+.news-submit button {
+    color: #fff; 
+    font-weight: bold;
+    display: block; 
+    
+}
+
+/*.button {
     width: 100px;
     height: 30px;    
     border-radius: 20px; 
@@ -51,11 +76,11 @@ main {
     font-size: 13px;
     text-align: center;
      
-}
+}*/
 
 
 
-input[type="submit"]:hover {
+.button:hover {
     background-color: #3b5db6;
     border: 0.1em solid #fff;
     transition: 0.5s;
