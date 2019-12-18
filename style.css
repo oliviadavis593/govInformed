@@ -206,6 +206,7 @@ legend {
 
 
 
+
 /*=======================================*/
     /*JS-Candidate-Container=========*/
 /*=======================================*/
@@ -225,6 +226,12 @@ legend {
     height: auto; 
 }
 
+.candidate-results button {
+   margin-top: 30px; 
+   margin-bottom: 30px; 
+   
+}
+
 /*=======================================*/
     /*JS-News-Container=========*/
 /*=======================================*/
@@ -239,8 +246,9 @@ legend {
     
 }
 
-.news-results a {
-    color: #f4b405;
+.news-results button {
+    margin-top: 30px; 
+    margin-bottom: 30px; 
 }
 
 
