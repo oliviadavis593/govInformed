@@ -35,9 +35,8 @@ main {
     font-weight: bold;
     font-size: 13px;
     text-align: center;
-    text-decoration: none;
+    text-decoration: none; 
 }
-
 
 .button {
     background-color: #1e2f5c;
@@ -47,6 +46,7 @@ main {
     text-align: center; 
     border-radius: 20px;  
     padding: 10px;
+    font-size: 15px; 
 }
 
 .candidate-submit {
@@ -246,7 +246,9 @@ main {
 
     /*Button Section*/
 
-    
+    .button {
+        font-size: 20px;
+    }
 
     /*Header Section*/
     #header-container {
