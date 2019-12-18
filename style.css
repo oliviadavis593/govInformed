@@ -128,7 +128,7 @@ fieldset {
     border: 4px solid #000;
     border-radius: 2%;
     width: 300px;
-    height: 520px; 
+    height: auto; 
     display: block; 
     margin-top: 0 auto; 
     background-color: #900f30;
@@ -281,7 +281,7 @@ legend {
    /*Candidate Section*/
     .candidate-form {
         width: 500px; 
-        height: 550px; 
+        height: auto; 
     }
 
     .candidate-form h2 {
@@ -357,7 +357,7 @@ legend {
     }
 
     .candidate-form {
-        height: 600px; 
+        height: auto; 
     }
     .candidate-name,
     .year-input,
@@ -414,7 +414,7 @@ legend {
     /*Candidate Results Section*/
     #js-candidate {
         width: 900px; 
-        height: 900px; 
+        height: auto; 
     }
 
     .candidate-results {
