@@ -5,13 +5,13 @@
 
 # Project ScreenShots :camera:
 
-| <img alt="Landing Page" src="homepage.png" width="525"> | <img alt="Candidate Form" src="candidate.png" width="525"> |
+<img alt="Landing Page" src="landing-header.png" width="525"> |<img alt="Candidate Form" src="candidate.png" width="525"> |
 |:---:|:---:|
-| Homepage | Candidate Submit Form |
+| Homepage |Candidate Form|
 
-| <img alt="candidate-results" src="candidate-results.png" width="525"> | <img alt="News Results" src="news-results.png" width="525"> |
+| <img alt="News Form" src="headline.png" width="525"> | <img alt="News Results" src="news-results.png" width="525"> |
 |:---:|:---:|
-| Candidate Results | News Results |
+| News Form | News Results |
 
 
 # Project Summary :page_with_curl:
