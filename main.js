@@ -186,6 +186,8 @@ function newsResults(responseJson) {
     //display results section
     $('.news-results').html(html);
     $('#js-news').removeClass('hidden');
+
+    $('.news-results').append(`<button class="homepage-button button"><a href="index.html">Go back to the homepage</a></button>`);
 }
 
 
