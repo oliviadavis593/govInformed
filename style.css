@@ -135,9 +135,12 @@ fieldset {
     box-shadow: 4px 4px 4px #000; 
 }
 
-.candidate-form h2 {
+legend {
     text-align: center;
-    font-size: 20px; 
+    font-size: 23px;
+    font-weight: bold; 
+    padding-top: 30px; 
+    padding-bottom: 10px;  
 }
 
 .candidate-form label {
@@ -182,9 +185,8 @@ fieldset {
     box-shadow: 4px 4px 4px #000; 
 }
 
-.news-form h2 {
-    font-size: 20px; 
-  
+.news-form legend {
+    padding-bottom: 20px; 
 }
 
 .news-form label {
