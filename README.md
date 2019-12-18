@@ -10,12 +10,10 @@
      style="float-left: 10px; margin-right: 10px;" width="400px"/>
      <img src="candidate-form.png"
      alt="form-section" style="float-left: 10px; margin-right: 10px;" width="305px" />
-     <img src="news-form.png"
-     alt="news-section" style="float-left: 10px; margin-right: 10px;" width="305px" />
      <img src="candidate-results.png"
-     alt="candidate-results" style="float-left: 10px; margin-right: 10px;" width="305px" />
+     alt="candidate-results" style="float-left: 10px; margin-right: 20px;" width="250px" />
      <img src="news-results.png"
-     alt="news-results" style="float-left: 10px; margin-right: 10px;" width="305px" />
+     alt="news-results" style="float-left: 10px; margin-right: 20px;" width="250px" />
 
 
 
