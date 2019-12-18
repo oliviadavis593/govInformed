@@ -5,10 +5,19 @@
 
 # Project ScreenShots :camera:
 
-![homepage-header|320x397,10%](https://user-images.githubusercontent.com/24490819/70744119-b8ff0d00-1ce6-11ea-90b3-ce57e39d94b8.png)
-![forms|320x397,30%](https://user-images.githubusercontent.com/24490819/70744227-e8157e80-1ce6-11ea-9690-bcdbb96974ed.png)
-![candidate-results|300x350,10%](https://user-images.githubusercontent.com/24490819/70744298-0d09f180-1ce7-11ea-89b6-c003b501f1a2.png)
-![news-results|300x350,10%](https://user-images.githubusercontent.com/24490819/70744388-3460be80-1ce7-11ea-9241-8c7b48862e0e.png)
+<img src="homepage.png"
+     alt="homepage"
+     style="float-left: 10px; margin-right: 10px;" width="400px"/>
+     <img src="candidate-form.png"
+     alt="form-section" style="float-left: 10px; margin-right: 10px;" width="305px" />
+     <img src="news-form.png"
+     alt="news-section" style="float-left: 10px; margin-right: 10px;" width="305px" />
+     <img src="candidate-results.png"
+     alt="candidate-results" style="float-left: 10px; margin-right: 10px;" width="305px" />
+     <img src="news-results.png"
+     alt="news-results" style="float-left: 10px; margin-right: 10px;" width="305px" />
+
+
 
 # Project Summary :page_with_curl:
 
