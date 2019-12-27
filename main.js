@@ -101,6 +101,7 @@ function candidateResults(responseJson) {
         //display the results section 
         $('.candidate-results').html(html);
         $('#js-candidate').removeClass('hidden');
+        $('#header-container h1').replaceWith('<a class="candidateResultsHeader" href="index.html">Candidate Results</a>');
     }
 
     $('.candidate-results').append(`<button class="homepage-button button"><a href="index.html">Go back to the homepage</a></button>`);
@@ -186,7 +187,7 @@ function newsResults(responseJson) {
     //display results section
     $('.news-results').html(html);
     $('#js-news').removeClass('hidden');
-
+    $('#header-container h1').replaceWith('<a class="newsResultsHeader" href="index.html">News Results</a>');
     $('.news-results').append(`<button class="homepage-button button"><a href="index.html">Go back to the homepage</a></button>`);
 }
 
