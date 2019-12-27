@@ -213,6 +213,7 @@ legend {
 
 .candidate-results  {
     font-size: 15px; 
+    margin: auto; 
 }
 
 #js-candidate {
@@ -223,7 +224,7 @@ legend {
 
 .candidate-results {
     width: 300px; 
-    height: auto; 
+    height: auto;
 }
 
 .candidate-results button {
@@ -249,6 +250,10 @@ legend {
     width: 350px; 
     height: auto; 
     
+}
+
+.news-results {
+    margin: auto; 
 }
 
 .news-results button {
@@ -350,6 +355,7 @@ legend {
 
     .candidate-results {
         font-size: 15px; 
+        margin: auto;
     }
 
     /*News Results Section*/
@@ -402,6 +408,7 @@ legend {
     
     .candidate-results {
         font-size: 20px; 
+        margin: auto;
     }
 
     /*News Results Section*/
