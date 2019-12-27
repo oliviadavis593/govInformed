@@ -73,6 +73,7 @@ function watchCandidateSubmit() {
 //Display candidate results to the dom 
 function candidateResults(responseJson) {
    $('.candidate-results').empty();
+   window.scrollTo(0, 0);
     //iterate through items array 
     let html = '';
     for(let i = 0; i < responseJson.results.length; i += 1) {
@@ -168,7 +169,7 @@ function watchNewsSubmit() {
 
 function newsResults(responseJson) {
     $('.news-results').empty();
-
+    window.scrollTo(0, 0);
     let html = '';
     for(let i = 0; i < responseJson.articles.length; i += 1) {
         const articles = responseJson.articles[i];
